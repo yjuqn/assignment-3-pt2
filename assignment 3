@@ -1,0 +1,102 @@
+
+names = ['Alice', 'Steven', 'Frank']
+print(names[0])
+print(names[1])
+print(names[2])
+
+
+names = ['Alice', 'Steven', 'Frank']
+for name in names:
+    print(f"Hello, {name}! Hope you're having a great day.")
+
+
+transport = ['Tesla car', 'Yamaha motorcycle', 'Giant bicycle']
+for item in transport:
+    print(f"I would like to own a {item}.")
+
+
+guests = ['Albert Einstein', 'Ada Lovelace', 'Nelson Mandela']
+for guest in guests:
+    print(f"Dear {guest}, you are invited to dinner!")
+
+
+guests = ['Albert Einstein', 'Ada Lovelace', 'Nelson Mandela']
+print(f"Unfortunately, {guests[2]} can't make it to dinner.")
+guests[2] = 'Marie Curie'
+for guest in guests:
+    print(f"Dear {guest}, you are invited to dinner!")
+
+
+
+guests = ['Albert Einstein', 'Ada Lovelace', 'Marie Curie']
+print("Good news! I found a bigger dinner table.")
+guests.insert(0, 'Isaac Newton')
+guests.insert(2, 'Galileo Galilei')
+guests.append('Katherine Johnson')
+for guest in guests:
+    print(f"Dear {guest}, you are invited to dinner!")
+
+
+
+guests = ['Isaac Newton', 'Albert Einstein', 'Galileo Galilei', 'Ada Lovelace', 'Marie Curie', 'Katherine Johnson']
+print("Sorry, I can only invite two people to dinner.")
+while len(guests) > 2:
+    removed = guests.pop()
+    print(f"Sorry, {removed}, I can't invite you to dinner.")
+for guest in guests:
+    print(f"{guest}, you are still invited.")
+del guests[0] 
+del guests[0]
+print(guests)
+
+
+
+places = ['Japan', 'Norway', 'New Zealand', 'Canada', 'Iceland']
+print(places)
+print(sorted(places))
+print(places)
+print(sorted(places, reverse=True))
+print(places)
+places.reverse()
+print(places)
+places.reverse()
+print(places)
+places.sort()
+print(places)
+places.sort(reverse=True)
+print(places)
+
+
+
+guests = ['Isaac Newton', 'Albert Einstein']
+print(f"I am inviting {len(guests)} people to dinner.")
+
+
+
+mountains = ['Everest', 'K2', 'Denali', 'Mont Blanc']
+print(mountains)
+print(mountains[0])
+mountains.append('Elbrus')
+print(mountains)
+mountains.insert(2, 'Matterhorn')
+print(mountains)
+del mountains[3]
+print(mountains)
+popped_mountain = mountains.pop()
+print(popped_mountain)
+mountains.remove('K2')
+print(mountains)
+print(sorted(mountains))
+mountains.reverse()
+print(mountains)
+mountains.sort()
+print(mountains)
+mountains.sort(reverse=True)
+print(mountains)
+print(len(mountains))
+
+
+
+names = ['Alice', 'Bob', 'Charlie']
+
+print(names[3])
